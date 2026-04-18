@@ -30,7 +30,7 @@ std::string infx2pstfx(const std::string& inf) {
                 result += inf[i];
                 ++i;
             }
-            result += ' '; 
+            result += ' ';
             --i;
         } else if (c == '(') {
             stack1.push(c);
