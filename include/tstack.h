@@ -2,13 +2,15 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
+#include <array>
+
 template<typename T, int size>
 class TStack {
-private:
-    T arr[size];
+ private:
+    std::array<T, size> arr;
     int top_idx = -1;
 
-public:
+ public:
     TStack() = default;
 
     void push(const T& value) {
@@ -38,7 +40,6 @@ public:
     bool is_full() const {
         return top_idx == size - 1;
     }
-  
 };
 
-#endif // INCLUDE_TSTACK_H_
+#endif
