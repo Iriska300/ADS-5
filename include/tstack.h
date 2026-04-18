@@ -42,4 +42,4 @@ class TStack {
     }
 };
 
-#endif
+#endif // INCLUDE_TSTACK_H_
